@@ -3,7 +3,11 @@ import { useState } from "react";
 export default function AnimalList() {
   const [animales, setAnimales] = useState([]);
 
-  //Recoge los datos del formulario y los valida
+  /**
+   * Recoge los datos del formulario mediante el metodo get 
+   * y como usamos el action, los campose solo se vacían pero 
+   * no se refreseca la página
+   * */
   function add(e) {
     if (e.get("nombre") == "" || e.get("especie") == "") {
       alert("Faltan campos por rellenar");
