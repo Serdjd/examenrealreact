@@ -5,8 +5,8 @@ export default function AnimalList() {
 
   /**
    * Recoge los datos del formulario mediante el metodo get 
-   * y como usamos el action, los campose solo se vacían pero 
-   * no se refreseca la página
+   * (como usamos el action, los campose solo se vacían pero 
+   * no se refreseca la página) y validamos los datos
    * */
   function add(e) {
     if (e.get("nombre") == "" || e.get("especie") == "") {
